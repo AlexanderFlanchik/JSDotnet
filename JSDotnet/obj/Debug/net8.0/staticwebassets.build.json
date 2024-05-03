@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "Q82iZklvsTsfp1GuQc+sM88nmondUfSWvqCWJan0w6k=",
+  "Source": "JSDotnet.Web",
+  "BasePath": "_content/JSDotnet.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "JSDotnet.Web\\wwwroot",
+      "Source": "JSDotnet.Web",
+      "ContentRoot": "C:\\Projects\\JSDotnet\\JSDotnet\\wwwroot\\",
+      "BasePath": "_content/JSDotnet.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Projects\\JSDotnet\\JSDotnet\\wwwroot\\css\\app.css",
+      "SourceId": "JSDotnet.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\JSDotnet\\JSDotnet\\wwwroot\\",
+      "BasePath": "_content/JSDotnet.Web",
+      "RelativePath": "css/app.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Projects\\JSDotnet\\JSDotnet\\wwwroot\\css\\info-submitted@0.0.1.css",
+      "SourceId": "JSDotnet.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\JSDotnet\\JSDotnet\\wwwroot\\",
+      "BasePath": "_content/JSDotnet.Web",
+      "RelativePath": "css/info-submitted@0.0.1.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\info-submitted@0.0.1.css"
+    }
+  ]
+}

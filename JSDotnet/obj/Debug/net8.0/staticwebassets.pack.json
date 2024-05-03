@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Projects\\JSDotnet\\JSDotnet\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Projects\\JSDotnet\\JSDotnet\\wwwroot\\css\\info-submitted@0.0.1.css",
+      "PackagePath": "staticwebassets\\css\\info-submitted@0.0.1.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JSDotnet.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.JSDotnet.Web.props",
+      "PackagePath": "build\\JSDotnet.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.JSDotnet.Web.props",
+      "PackagePath": "buildMultiTargeting\\JSDotnet.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.JSDotnet.Web.props",
+      "PackagePath": "buildTransitive\\JSDotnet.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

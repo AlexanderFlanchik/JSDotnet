@@ -1,0 +1,28 @@
+﻿html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    padding: 35px;
+    background-color: oldlace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+}
+
+.main-content span {
+    font-size: 42px;
+    color: Navy;
+    letter-spacing: 0.5px;
+}
