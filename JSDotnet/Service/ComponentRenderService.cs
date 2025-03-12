@@ -25,30 +25,30 @@ namespace JSDotnet.Service
 
             using var engine = new Engine();
             var componentResult = new RenderComponentResult();
-
+            var script = await File.ReadAllTextAsync(componentScript);
+            var tsc = new TaskCompletionSource<RenderComponentResult>();
+            
             engine.SetValue("dataJson", parameters.DataJson);
             engine.SetValue("context", context);
-
             engine.SetValue("callback", 
-                (string? content, string? redirectUrl, string? contentType) => {
+                (string? content, string? redirectUrl, string? contentType) =>
+                {
                     componentResult.Content = content;
                     componentResult.RedirectUrl = redirectUrl;
                     componentResult.ContentType = contentType;
+                    tsc.SetResult(componentResult);
                 });
-
-            return await Task.Run(async () =>
+            
+            try
             {
-                try
-                {
-                    engine.Evaluate(await File.ReadAllTextAsync(componentScript));
-
-                    return componentResult;
-                }
-                catch (Exception ex)
-                {
-                    return new RenderComponentResult { Exception = ex };
-                }
-            });
+                engine.Execute(script);
+                
+                return await tsc.Task; // Render using JS
+            }
+            catch (Exception ex)
+            {
+                return new RenderComponentResult() { Exception = ex };
+            }
         }
     }
 }

@@ -13,10 +13,16 @@ var app = builder.Build();
 app.UseAntiforgery();
 app.UseStaticFiles();
 
-app.MapGet("/", async (HttpContext context, IComponentRenderService componentService, IAntiforgery antiforgery) => {
+app.MapGet("/", async (HttpContext context, IComponentRenderService componentService, IAntiforgery antiforgery) =>
+{
     var tokens = antiforgery.GetTokens(context);
+    if (!string.IsNullOrEmpty(tokens.CookieToken))
+    {
+        context.Response.Cookies.Append("XSRF_TOKEN", tokens.CookieToken);
+    }
+
     var renderResult = await componentService.RenderAsync(
-        new RenderComponentParameters 
+        new RenderComponentParameters
         { 
             ComponentName = "home-page@0.0.1",
             DataJson = JsonSerializer.Serialize(
